@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Quest</title>
+
+    <!-- CSS do visual do jogo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <h1>SQL QUEST</h1>
+
+        <!-- =========================
+             RANKING FINAL (TOPO)
+        ========================== -->
+        <div class="ranking" id="ranking" style="display:none">
+            <h2>🏆 Ranking Final</h2>
+            <div id="rankingList"></div>
+        </div>
+
+        <!-- =========================
+             PLACAR DURANTE O JOGO
+        ========================== -->
+        <div class="scoreboard">
+            ✅ Acertos: <span id="acertos">0</span> |
+            ❌ Erros: <span id="erros">0</span>
+        </div>
+
+        <!-- =========================
+             HISTÓRIA
+        ========================== -->
+        <div class="story" id="story">
+            Você acorda em uma ilha misteriosa...
+            Para escapar, precisará dominar SQL.
+        </div>
+
+        <!-- =========================
+             TERMINAL
+        ========================== -->
+        <div class="terminal">
+
+            <!-- AQUI é o ponto importante -->
+            <div class="output" id="output">Fase 1: Liste todos os usuários da tabela users.</div>
+
+            <input 
+                type="text" 
+                id="sqlInput" 
+                placeholder="Digite seu comando SQL aqui..."
+                autocomplete="off"
+            >
+
+            <button id="runBtn">Executar</button>
+
+        </div>
+
+        <!-- =========================
+             NOME DO JOGADOR (FINAL)
+        ========================== -->
+        <div class="player-name" id="playerBox" style="display:none">
+            <input 
+                type="text" 
+                id="playerName" 
+                placeholder="Digite seu nome para o ranking"
+            >
+        </div>
+
+        <!-- =========================
+             BOTÃO REINICIAR
+        ========================== -->
+        <button id="restartBtn" style="display:none">
+            🔁 Reiniciar Jogo
+        </button>
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

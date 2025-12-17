@@ -1,0 +1,212 @@
+/* =========================
+   RESET + BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #00ff9c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.game-container {
+    width: 90%;
+    max-width: 720px;
+    background-color: #111;
+    border: 2px solid #00ff9c;
+    padding: 20px;
+    box-shadow: 0 0 25px #00ff9c44;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+.game-container h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 8px #00ff9c88;
+}
+
+/* =========================
+   RANKING (TOPO)
+========================= */
+.ranking {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #00ff9c;
+}
+
+.ranking h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+    padding: 4px 0;
+    border-bottom: 1px dashed #00ff9c33;
+}
+
+/* =========================
+   PLACAR
+========================= */
+.scoreboard {
+    margin-bottom: 12px;
+    padding: 8px;
+    background-color: #0b0b0b;
+    border: 1px solid #00ff9c44;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* =========================
+   HISTÓRIA / INTRO
+========================= */
+.story {
+    background-color: #0b0b0b;
+    border-left: 4px solid #00ff9c;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #b6ffe2;
+    font-size: 14px;
+}
+
+/* =========================
+   TERMINAL
+========================= */
+.terminal {
+    background-color: #000;
+    border: 1px solid #00ff9c;
+    padding: 8px 15px 15px; /* ↓ topo menor */
+    margin-bottom: 15px;
+}
+
+/* Texto de saída */
+.output {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* =========================
+   INPUT SQL
+========================= */
+#sqlInput {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d0d0d;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    outline: none;
+    font-size: 14px;
+}
+
+#sqlInput::placeholder {
+    color: #00ff9c66;
+}
+
+/* =========================
+   BOTÃO EXECUTAR
+========================= */
+#runBtn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: bold;
+}
+
+#runBtn:hover {
+    background-color: #00ff9c;
+    color: #000;
+    box-shadow: 0 0 10px #00ff9caa;
+}
+
+/* =========================
+   NOME DO JOGADOR (FINAL)
+========================= */
+.player-name {
+    margin-bottom: 10px;
+}
+
+#playerName {
+    width: 100%;
+    padding: 8px;
+    background-color: #0d0d0d;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    outline: none;
+    font-size: 14px;
+}
+
+#playerName::placeholder {
+    color: #00ff9c66;
+}
+
+/* =========================
+   BOTÃO REINICIAR
+========================= */
+#restartBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #00ff9c;
+    color: #00ff9c;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.25s ease;
+}
+
+#restartBtn:hover {
+    background-color: #ff4c4c;
+    border-color: #ff4c4c;
+    color: #000;
+    box-shadow: 0 0 10px #ff4c4caa;
+}
+
+/* =========================
+   ESTADOS
+========================= */
+.error {
+    color: #ff4c4c;
+}
+
+.success {
+    color: #00ff9c;
+}
+
+/* REMOVE / PERSONALIZA SELEÇÃO DE TEXTO */
+::selection {
+    background: #00ff9c;
+    color: #000;
+}
+
+::-moz-selection {
+    background: #00ff9c;
+    color: #000;
+}
